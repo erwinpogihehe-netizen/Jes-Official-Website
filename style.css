@@ -1,0 +1,112 @@
+body {
+ overflow-x: hidden;
+  background-color: #ddd;
+  background-image:
+    linear-gradient(white 1px, transparent 1px),
+    linear-gradient(90deg, white 1px, transparent 1px);
+  background-size: 64px 64px;
+  position: relative;
+  height: 100vh;
+  margin: 0;
+}
+.white-overlay {
+  top: 90px;
+ position: absolute;
+  width: 1500px;
+  height: 850px;
+  
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.header, .p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+  font-size: 25px;
+  text-align: center;
+  color: slategrey;
+}
+
+img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  will-change: transform;
+  position: absolute;opacity: 0; 
+  animation-fill-mode: backwards; 
+}
+
+.image1, .image2, .image3, .image9, .image10,
+.image11, .image12, .image16 {
+  top: 525px;
+  left: -400px;
+  animation: moveRight 20s linear infinite;
+}
+
+.image2  { animation-delay: 2.5s; }
+.image3  { animation-delay: 5s; }
+.image9  { animation-delay: 7.5s; }
+.image10 { animation-delay: 10s; }
+.image11 { animation-delay: 12.5s; }
+.image12 { animation-delay: 15s; }
+.image16 { animation-delay: 17.5s; }
+
+.image5, .image6, .image7, .image8, .image13,
+.image14, .image15, .image17 {
+  top: 100px;
+  left: 1500px;
+  animation: moveLeft 20s linear infinite;
+}
+
+.image6  { animation-delay: 2.5s; }
+.image7  { animation-delay: 5s; }
+.image8  { animation-delay: 7.5s; }
+.image13 { animation-delay: 10s; }
+.image14 { animation-delay: 12.5s; }
+.image15 { animation-delay: 15s; }
+.image17 { animation-delay: 17.5s; }
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200vw);
+    opacity: 1;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-200vw);
+    opacity: 1;
+  }
+}
+p{
+  display: inline-block;
+  padding: 10px 80px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 25px;
+  background: linear-gradient(to right, #ffa8f7, #575aff);
+}
+.More
+{
+    padding-top: 875px;
+    padding-left: 1150px;
+
+}

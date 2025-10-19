@@ -1,0 +1,162 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Bold.woff2') format('woff2');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DongleRegular';
+  src: url('fonts/Dongle/Dongle-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Kensmark';
+  src: url('fonts/kensmark/kensmark-03-black.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Caldense';
+  src: url('fonts/Caldense/Caldense.ttf') format('truetype');
+  font-style: normal;
+}
+
+body {
+  background-color: #ddd;
+  overflow-x: hidden;
+  background-image:
+    linear-gradient(white 1px, transparent 1px),
+    linear-gradient(90deg, white 1px, transparent 1px);
+  background-size: 64px 64px;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.6);
+  pointer-events: none;
+  z-index: -1;
+}
+.contact {
+  text-align: center;
+  font-family: "DongleRegular", sans-serif;
+  font-size: 64px;
+  color: rgb(51, 51, 51);
+  z-index: 1;
+  margin-top: 70px;
+}
+.text {
+  text-align: center;
+  margin-bottom: 15px;
+  font-family: "DongleRegular", sans-serif;
+  font-size: 24px;
+  color: rgb(57, 59, 59);
+}
+.thankyou-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.thankyou-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.06);
+  align-content: center;
+}
+.thankyou-message {
+  background: rgb(252, 142, 172);
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 24px;
+  font-family: "DongleRegular", sans-serif;
+  font-size: 24px;
+  color: rgb(57, 59, 59);
+}
+.return-btn {
+  display: inline-block;
+  padding: 10px 28px;
+  border: 1px solid rgb(252, 142, 172);
+  border-radius: 30px;
+  text-decoration: none;
+  color: #000;
+  transition: all 0.2s ease;
+  font-size: 16px;
+}
+.return-btn:hover {
+  background: rgb(252, 142, 172);
+  color: #fff;
+}
+
+.site-footer {
+  background-color: #fff;
+  height: 250px;
+  padding-bottom: 25px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+.footer-content {
+  display: flex;
+  padding-top: 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  width: 90px;
+  height: auto;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 20px;
+  font-family: 'DongleRegular', sans-serif;
+}
+
+.footer-nav a {
+  color: rgb(51, 51, 51);
+  text-decoration: none;
+  font-size: 30px;
+  transition: color 0.3s;
+}
+
+.footer-copy {
+  font-family: 'DongleRegular', sans-serif;
+  font-size: 25px;
+  color: rgb(51, 51, 51);
+  margin-top: 1px;
+}
+.footer-copy, .footer-nav {
+  font-weight: lighter;
+}
+@media (max-width: 1024px){
+  .footer-content {
+    display: none;
+  }
+  .footer-copy {
+    margin-top: 20px;
+  }
+}
