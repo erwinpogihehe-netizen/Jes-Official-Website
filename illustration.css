@@ -318,7 +318,7 @@ body::before {
     top: 80px;
   }
   .nav_image {
-    display: none;
+    display: none !important;
   }
   .footer-content {
     display: none;
